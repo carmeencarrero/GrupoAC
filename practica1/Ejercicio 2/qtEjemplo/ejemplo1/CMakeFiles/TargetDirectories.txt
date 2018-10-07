@@ -1,0 +1,7 @@
+/home/andres/Descargas/qtEjemplo/ejemplo1/CMakeFiles/install/strip.dir
+/home/andres/Descargas/qtEjemplo/ejemplo1/CMakeFiles/edit_cache.dir
+/home/andres/Descargas/qtEjemplo/ejemplo1/CMakeFiles/ejemplo1.dir
+/home/andres/Descargas/qtEjemplo/ejemplo1/CMakeFiles/rebuild_cache.dir
+/home/andres/Descargas/qtEjemplo/ejemplo1/CMakeFiles/list_install_components.dir
+/home/andres/Descargas/qtEjemplo/ejemplo1/CMakeFiles/install/local.dir
+/home/andres/Descargas/qtEjemplo/ejemplo1/CMakeFiles/install.dir

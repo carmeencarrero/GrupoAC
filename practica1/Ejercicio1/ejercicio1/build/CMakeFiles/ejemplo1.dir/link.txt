@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/ejemplo1.dir/ejemplo1.cpp.o CMakeFiles/ejemplo1.dir/main.cpp.o CMakeFiles/ejemplo1.dir/moc_ejemplo1.cxx.o  -o ejemplo1 -lQtCore -lQtGui 

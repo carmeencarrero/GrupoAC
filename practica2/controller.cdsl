@@ -1,0 +1,15 @@
+import "DifferentialRobot.idsl";
+import "Laser.idsl";
+
+Component MyFirstComp
+    {
+        Communications
+        {
+            requires DifferentialRobot, Laser;
+        };
+
+        language Cpp;
+    gui Qt(QWidget);
+    
+    };
+
