@@ -16,36 +16,29 @@
  *    You should have received a copy of the GNU General Public License
  *    along with RoboComp.  If not, see <http://www.gnu.org/licenses/>.
  */
+#ifndef RCISMOUSEPICKER_H
+#define RCISMOUSEPICKER_H
 
-/**
-       \brief
-       @author authorname
-*/
+// Ice includes
+#include <Ice/Ice.h>
+#include <RCISMousePicker.h>
 
+#include <config.h>
+#include "genericworker.h"
 
+using namespace RoboCompRCISMousePicker;
 
-#ifndef SPECIFICWORKER_H
-#define SPECIFICWORKER_H
-
-#include <genericworker.h>
-#include <innermodel/innermodel.h>
-#include <target.h>
-
-class SpecificWorker : public GenericWorker
+class RCISMousePickerI : public virtual RoboCompRCISMousePicker::RCISMousePicker
 {
-Q_OBJECT
 public:
-	SpecificWorker(MapPrx& mprx);
-	~SpecificWorker();
-	bool setParams(RoboCompCommonBehavior::ParameterList params);
+RCISMousePickerI(GenericWorker *_worker);
+	~RCISMousePickerI();
 
-	void setPick(const Pick &myPick);
-
-public slots:
-	void compute();
+	void setPick(const Pick  &myPick, const Ice::Current&);
 
 private:
-	InnerModel *innerModel;
+
+	GenericWorker *worker;
 
 };
 

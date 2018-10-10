@@ -172,6 +172,24 @@ EWIEGA46WW/moc_specificmonitor.cpp
 EWIEGA46WW/moc_specificworker.cpp
 /home/carmen/robocomp/components/GrupoAC/practica2/src/MyFirstComp_autogen/EWIEGA46WW/moc_specificworker.cpp
 
+/home/carmen/robocomp/components/GrupoAC/practica2/src/RCISMousePicker.cpp
+RCISMousePicker.h
+-
+IceUtil/PushDisableWarnings.h
+-
+Ice/LocalException.h
+-
+Ice/ValueFactory.h
+-
+Ice/OutgoingAsync.h
+-
+Ice/InputStream.h
+-
+Ice/OutputStream.h
+-
+IceUtil/PopDisableWarnings.h
+-
+
 /home/carmen/robocomp/components/GrupoAC/practica2/src/commonbehaviorI.cpp
 commonbehaviorI.h
 /home/carmen/robocomp/components/GrupoAC/practica2/src/commonbehaviorI.h
@@ -233,6 +251,8 @@ Laser.h
 -
 GenericBase.h
 -
+RCISMousePicker.h
+-
 
 /home/carmen/robocomp/components/GrupoAC/practica2/src/main.cpp
 signal.h
@@ -265,6 +285,8 @@ specificmonitor.h
 /home/carmen/robocomp/components/GrupoAC/practica2/src/specificmonitor.h
 commonbehaviorI.h
 /home/carmen/robocomp/components/GrupoAC/practica2/src/commonbehaviorI.h
+rcismousepickerI.h
+-
 DifferentialRobot.h
 -
 GenericBase.h
@@ -273,6 +295,22 @@ Laser.h
 -
 GenericBase.h
 -
+RCISMousePicker.h
+-
+
+/home/carmen/robocomp/components/GrupoAC/practica2/src/rcismousepickerI.cpp
+rcismousepickerI.h
+/home/carmen/robocomp/components/GrupoAC/practica2/src/rcismousepickerI.h
+
+/home/carmen/robocomp/components/GrupoAC/practica2/src/rcismousepickerI.h
+Ice/Ice.h
+-
+RCISMousePicker.h
+-
+config.h
+-
+genericworker.h
+/home/carmen/robocomp/components/GrupoAC/practica2/src/genericworker.h
 
 /home/carmen/robocomp/components/GrupoAC/practica2/src/specificmonitor.cpp
 specificmonitor.h
@@ -290,6 +328,8 @@ specificworker.h
 genericworker.h
 -
 innermodel/innermodel.h
+-
+target.h
 -
 
 /opt/robocomp/include/innermodel/innermodel.h
@@ -4562,6 +4602,44 @@ src/MyFirstComp_autogen/include/moc_sigwatch.cpp
 ../../../../../../classes/sigwatch/sigwatch.h
 ../../../classes/sigwatch/sigwatch.h
 
+src/RCISMousePicker.h
+IceUtil/PushDisableWarnings.h
+-
+Ice/ProxyF.h
+-
+Ice/ObjectF.h
+-
+Ice/ValueF.h
+-
+Ice/Exception.h
+-
+Ice/LocalObject.h
+-
+Ice/StreamHelpers.h
+-
+Ice/Comparable.h
+-
+Ice/Proxy.h
+-
+Ice/Object.h
+-
+Ice/GCObject.h
+-
+Ice/Value.h
+-
+Ice/Incoming.h
+-
+Ice/FactoryTableInit.h
+-
+IceUtil/ScopedArray.h
+-
+Ice/Optional.h
+-
+IceUtil/UndefSysMacros.h
+-
+IceUtil/PopDisableWarnings.h
+-
+
 src/config.h
 
 src/genericworker.h
@@ -4584,6 +4662,26 @@ GenericBase.h
 Laser.h
 -
 GenericBase.h
+-
+RCISMousePicker.h
+-
+
+src/rcismousepickerI.h
+Ice/Ice.h
+-
+RCISMousePicker.h
+-
+config.h
+-
+genericworker.h
+src/genericworker.h
+
+src/target.h
+mutex
+-
+queue
+-
+pair
 -
 
 src/ui_mainUI.h

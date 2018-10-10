@@ -129,3 +129,9 @@ void SpecificWorker::compute()
         std::cout << ex << std::endl;
     }
 }
+
+void SpecificWorker::setPick(const Pick &myPick)
+{
+//subscribesToCODE
+
+}

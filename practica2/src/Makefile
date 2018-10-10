@@ -321,6 +321,33 @@ MyFirstComp_autogen/mocs_compilation.cpp.s:
 	cd /home/carmen/robocomp/components/GrupoAC/practica2 && $(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/MyFirstComp_autogen/mocs_compilation.cpp.s
 .PHONY : MyFirstComp_autogen/mocs_compilation.cpp.s
 
+RCISMousePicker.o: RCISMousePicker.cpp.o
+
+.PHONY : RCISMousePicker.o
+
+# target to build an object file
+RCISMousePicker.cpp.o:
+	cd /home/carmen/robocomp/components/GrupoAC/practica2 && $(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/RCISMousePicker.cpp.o
+.PHONY : RCISMousePicker.cpp.o
+
+RCISMousePicker.i: RCISMousePicker.cpp.i
+
+.PHONY : RCISMousePicker.i
+
+# target to preprocess a source file
+RCISMousePicker.cpp.i:
+	cd /home/carmen/robocomp/components/GrupoAC/practica2 && $(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/RCISMousePicker.cpp.i
+.PHONY : RCISMousePicker.cpp.i
+
+RCISMousePicker.s: RCISMousePicker.cpp.s
+
+.PHONY : RCISMousePicker.s
+
+# target to generate assembly for a file
+RCISMousePicker.cpp.s:
+	cd /home/carmen/robocomp/components/GrupoAC/practica2 && $(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/RCISMousePicker.cpp.s
+.PHONY : RCISMousePicker.cpp.s
+
 commonbehaviorI.o: commonbehaviorI.cpp.o
 
 .PHONY : commonbehaviorI.o
@@ -510,6 +537,33 @@ main.cpp.s:
 	cd /home/carmen/robocomp/components/GrupoAC/practica2 && $(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+rcismousepickerI.o: rcismousepickerI.cpp.o
+
+.PHONY : rcismousepickerI.o
+
+# target to build an object file
+rcismousepickerI.cpp.o:
+	cd /home/carmen/robocomp/components/GrupoAC/practica2 && $(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/rcismousepickerI.cpp.o
+.PHONY : rcismousepickerI.cpp.o
+
+rcismousepickerI.i: rcismousepickerI.cpp.i
+
+.PHONY : rcismousepickerI.i
+
+# target to preprocess a source file
+rcismousepickerI.cpp.i:
+	cd /home/carmen/robocomp/components/GrupoAC/practica2 && $(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/rcismousepickerI.cpp.i
+.PHONY : rcismousepickerI.cpp.i
+
+rcismousepickerI.s: rcismousepickerI.cpp.s
+
+.PHONY : rcismousepickerI.s
+
+# target to generate assembly for a file
+rcismousepickerI.cpp.s:
+	cd /home/carmen/robocomp/components/GrupoAC/practica2 && $(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/rcismousepickerI.cpp.s
+.PHONY : rcismousepickerI.cpp.s
+
 specificmonitor.o: specificmonitor.cpp.o
 
 .PHONY : specificmonitor.o
@@ -593,6 +647,9 @@ help:
 	@echo "... MyFirstComp_autogen/mocs_compilation.o"
 	@echo "... MyFirstComp_autogen/mocs_compilation.i"
 	@echo "... MyFirstComp_autogen/mocs_compilation.s"
+	@echo "... RCISMousePicker.o"
+	@echo "... RCISMousePicker.i"
+	@echo "... RCISMousePicker.s"
 	@echo "... commonbehaviorI.o"
 	@echo "... commonbehaviorI.i"
 	@echo "... commonbehaviorI.s"
@@ -614,6 +671,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... rcismousepickerI.o"
+	@echo "... rcismousepickerI.i"
+	@echo "... rcismousepickerI.s"
 	@echo "... specificmonitor.o"
 	@echo "... specificmonitor.i"
 	@echo "... specificmonitor.s"

@@ -7,7 +7,7 @@ set(AM_CMAKE_CURRENT_SOURCE_DIR "/home/carmen/robocomp/components/GrupoAC/practi
 set(AM_CMAKE_CURRENT_BINARY_DIR "/home/carmen/robocomp/components/GrupoAC/practica2/src/")
 set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
 set(AM_BUILD_DIR "/home/carmen/robocomp/components/GrupoAC/practica2/src/MyFirstComp_autogen")
-set(AM_SOURCES "/home/carmen/robocomp/classes/qlog/qlog.cpp;/home/carmen/robocomp/classes/rapplication/rapplication.cpp;/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp;/home/carmen/robocomp/components/GrupoAC/practica2/src/commonbehaviorI.cpp;/home/carmen/robocomp/components/GrupoAC/practica2/src/genericmonitor.cpp;/home/carmen/robocomp/components/GrupoAC/practica2/src/genericworker.cpp;/home/carmen/robocomp/components/GrupoAC/practica2/src/main.cpp;/home/carmen/robocomp/components/GrupoAC/practica2/src/specificmonitor.cpp;/home/carmen/robocomp/components/GrupoAC/practica2/src/specificworker.cpp")
+set(AM_SOURCES "/home/carmen/robocomp/classes/qlog/qlog.cpp;/home/carmen/robocomp/classes/rapplication/rapplication.cpp;/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp;/home/carmen/robocomp/components/GrupoAC/practica2/src/commonbehaviorI.cpp;/home/carmen/robocomp/components/GrupoAC/practica2/src/genericmonitor.cpp;/home/carmen/robocomp/components/GrupoAC/practica2/src/genericworker.cpp;/home/carmen/robocomp/components/GrupoAC/practica2/src/main.cpp;/home/carmen/robocomp/components/GrupoAC/practica2/src/rcismousepickerI.cpp;/home/carmen/robocomp/components/GrupoAC/practica2/src/specificmonitor.cpp;/home/carmen/robocomp/components/GrupoAC/practica2/src/specificworker.cpp")
 set(AM_HEADERS "")
 # Qt environment
 set(AM_QT_VERSION_MAJOR "4")
