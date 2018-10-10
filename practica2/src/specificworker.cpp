@@ -62,7 +62,6 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 void SpecificWorker::compute()
 {
     const float threshold = 200; // millimeters
-    float rot = 0.6;  // rads per second
     static int cont = 0;
     static int giro = 0;
     
@@ -82,9 +81,9 @@ void SpecificWorker::compute()
         if (velocidadAdv > 1000) //para asegurarnos que el robot va a 1000 como velocidad maxima
             velocidadAdv = 1000;
         
-        float velocidadGiro = 1000 / (ldata[l*4].dist / 5000);
-         if (velocidadGiro > 70) //para asegurarnos que el robot va a 70 como velocidad maxima
-            velocidadGiro = 70;
+        float velocidadGiro = 10 / (ldata[l*4].dist / 5000);
+         if (velocidadGiro > 2) //para asegurarnos que el robot va a 2 como velocidad maxima
+            velocidadGiro = 2;
          
        //ordenamos ahora el vector entero de menor a mayor distancia usando una funcion lambda
         std::sort(ldata.begin(), ldata.end(), [](RoboCompLaser::TData a, RoboCompLaser::TData b){ return a.dist < b.dist; });  
@@ -92,10 +91,10 @@ void SpecificWorker::compute()
 	if(ldata.front().dist < threshold)
 	{
          if(ldata.front().angle < 0 && giro == 0){
-            differentialrobot_proxy->setSpeedBase(velocidadGiro, rot); //girar derecha (objeto izquierda)
+            differentialrobot_proxy->setSpeedBase(0, velocidadGiro); //girar derecha (objeto izquierda)
          }
           else{
-          differentialrobot_proxy->setSpeedBase(velocidadGiro, -rot); //girar izquierda (objeto derecha)
+          differentialrobot_proxy->setSpeedBase(0, -velocidadGiro); //girar izquierda (objeto derecha)
           giro = 1;
           }
         cont = 0;
@@ -112,9 +111,9 @@ void SpecificWorker::compute()
          
          while(num != 30){ //para que se gire mas de una vez
          if(ldata.front().angle < 0)
-           differentialrobot_proxy->setSpeedBase(70, r);
+           differentialrobot_proxy->setSpeedBase(0, r);
         else
-           differentialrobot_proxy->setSpeedBase(70, -r); 
+           differentialrobot_proxy->setSpeedBase(0, -r); 
         num++;
          }
         } else{
