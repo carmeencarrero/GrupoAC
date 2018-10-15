@@ -123,7 +123,7 @@ void SpecificWorker::compute()
         giro = 0;
         }
          }
-  	}
+  	  }
     catch(const Ice::Exception &ex)
     {
         std::cout << ex << std::endl;
