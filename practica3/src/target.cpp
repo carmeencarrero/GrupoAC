@@ -16,6 +16,7 @@
 
 #include "target.h"
 
+//ES UNA COLA!!!!
 
 /**
  * \brief Default constructor
@@ -41,7 +42,7 @@ bool Target::isEmpty(){
 void Target::extract(){
     
     if (!isEmpty){
-        
+   
         
     }
     
