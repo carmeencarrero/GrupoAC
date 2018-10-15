@@ -26,14 +26,13 @@ SET ( SOURCES
   commonbehaviorI.cpp
   genericworker.cpp
   specificworker.cpp
-  rcismousepickerI.cpp
 )
 
 
 
 #ROBOCOMP
 ROBOCOMP_INITIALIZE( $ENV{ROBOCOMP}/ )
-ROBOCOMP_WRAP_ICE( CommonBehavior DifferentialRobot  GenericBase  Laser  GenericBase  RCISMousePicker )
+ROBOCOMP_WRAP_ICE( CommonBehavior DifferentialRobot  GenericBase  Laser  GenericBase )
 SET (EXECUTABLE_OUTPUT_PATH ${RC_COMPONENT_DEVEL_PATH}/bin)
 
 # Qt4

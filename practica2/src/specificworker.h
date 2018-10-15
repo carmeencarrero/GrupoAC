@@ -29,7 +29,6 @@
 
 #include <genericworker.h>
 #include <innermodel/innermodel.h>
-#include <target.h>
 
 class SpecificWorker : public GenericWorker
 {
@@ -39,7 +38,6 @@ public:
 	~SpecificWorker();
 	bool setParams(RoboCompCommonBehavior::ParameterList params);
 
-	void setPick(const Pick &myPick);
 
 public slots:
 	void compute();

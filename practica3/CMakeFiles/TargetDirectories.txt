@@ -1,0 +1,14 @@
+/home/carmen/robocomp/components/GrupoAC/practica2/CMakeFiles/install/strip.dir
+/home/carmen/robocomp/components/GrupoAC/practica2/CMakeFiles/install.dir
+/home/carmen/robocomp/components/GrupoAC/practica2/CMakeFiles/install/local.dir
+/home/carmen/robocomp/components/GrupoAC/practica2/CMakeFiles/list_install_components.dir
+/home/carmen/robocomp/components/GrupoAC/practica2/CMakeFiles/edit_cache.dir
+/home/carmen/robocomp/components/GrupoAC/practica2/CMakeFiles/rebuild_cache.dir
+/home/carmen/robocomp/components/GrupoAC/practica2/src/CMakeFiles/install/strip.dir
+/home/carmen/robocomp/components/GrupoAC/practica2/src/CMakeFiles/edit_cache.dir
+/home/carmen/robocomp/components/GrupoAC/practica2/src/CMakeFiles/MyFirstComp.dir
+/home/carmen/robocomp/components/GrupoAC/practica2/src/CMakeFiles/rebuild_cache.dir
+/home/carmen/robocomp/components/GrupoAC/practica2/src/CMakeFiles/list_install_components.dir
+/home/carmen/robocomp/components/GrupoAC/practica2/src/CMakeFiles/install/local.dir
+/home/carmen/robocomp/components/GrupoAC/practica2/src/CMakeFiles/install.dir
+/home/carmen/robocomp/components/GrupoAC/practica2/src/CMakeFiles/MyFirstComp_autogen.dir
