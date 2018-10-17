@@ -18,8 +18,9 @@
 #define TARGET_H
 
 #include <mutex>
-#include <queue>
-#include <pair>
+#include <utility>
+
+using namespace std;
 
 class Target
 {
@@ -28,14 +29,14 @@ public:
     ~Target();
     
     bool isEmpty();
-    void insert();
-    pair<float,float> extract();
-
+    void insert(float x, float y);
+    void extract();
     
 private:
     
-    queue<pair<float,float>> coordenadas;
-    mutex hiloBloq;
+   pair<float, float> coordenadas;
+   mutex hiloBloq;
+   bool heLlegado;
 };
 
 #endif // TARGET_H

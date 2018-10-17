@@ -16,8 +16,6 @@
 
 #include "target.h"
 
-//ES UNA COLA!!!!
-
 /**
  * \brief Default constructor
  **/
@@ -35,21 +33,32 @@ Target::~Target()
 }
 
 bool Target::isEmpty(){
+    bool vacio;
+    hiloBloq.lock();
     
-  return true;  
+    if (heLlegado)
+        vacio = true;
+    else
+        vacio = false;
+    hiloBloq.unlock();
+    
+  return vacio;
 }
 
-void Target::extract(){
+pair<float,float> Target::extract(){
     
-    if (!isEmpty){
-   
-        
-    }
-    
+    hiloBloq.lock();
+
+    hiloBloq.unlock();
+     
+    return coordenadas;
 }
 
-T Target::insert()
+void Target::insert(float x, float z)
 {
+    hiloBloq.lock();
     
-    return true;
+    coordenadas.fi
+    
+    hiloBloq.unlock();
 }

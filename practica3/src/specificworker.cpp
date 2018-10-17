@@ -132,6 +132,6 @@ void SpecificWorker::compute()
 
 void SpecificWorker::setPick(const Pick &myPick)
 {
-//subscribesToCODE
+    
 
 }
