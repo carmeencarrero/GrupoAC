@@ -21,7 +21,7 @@
  **/
 Target::Target()
 {
-
+    coordenadasRobot.resize(2);
 }
 
 /**
@@ -32,33 +32,31 @@ Target::~Target()
 
 }
 
-bool Target::isEmpty(){
-    bool vacio;
-    hiloBloq.lock();
-    
-    if (heLlegado)
-        vacio = true;
-    else
-        vacio = false;
-    hiloBloq.unlock();
-    
-  return vacio;
-}
-
-pair<float,float> Target::extract(){
-    
-    hiloBloq.lock();
-
-    hiloBloq.unlock();
+QVec Target::extract(){
      
-    return coordenadas;
+    std::lock_guard<std::mutex> lock(hiloBloq);
+    return coordenadasRobot;
 }
 
 void Target::insert(float x, float z)
 {
     hiloBloq.lock();
     
-    coordenadas.fi
-    
+    coordenadasRobot[0] = x;
+    coordenadasRobot[1] = z;
+    pendiente = true;
     hiloBloq.unlock();
 }
+
+void Target::setPendiente(bool pend){
+    
+    std::lock_guard<std::mutex> lock(hiloBloq);
+    pendiente = pend;
+    
+}
+
+bool Target::getPendiente(){
+     std::lock_guard<std::mutex> lock(hiloBloq);
+    return pendiente;
+}
+    

@@ -618,6 +618,33 @@ specificworker.cpp.s:
 	cd /home/carmen/robocomp/components/GrupoAC/practica3/build && $(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/specificworker.cpp.s
 .PHONY : specificworker.cpp.s
 
+target.o: target.cpp.o
+
+.PHONY : target.o
+
+# target to build an object file
+target.cpp.o:
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build && $(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/target.cpp.o
+.PHONY : target.cpp.o
+
+target.i: target.cpp.i
+
+.PHONY : target.i
+
+# target to preprocess a source file
+target.cpp.i:
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build && $(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/target.cpp.i
+.PHONY : target.cpp.i
+
+target.s: target.cpp.s
+
+.PHONY : target.s
+
+# target to generate assembly for a file
+target.cpp.s:
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build && $(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/target.cpp.s
+.PHONY : target.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -680,6 +707,9 @@ help:
 	@echo "... specificworker.o"
 	@echo "... specificworker.i"
 	@echo "... specificworker.s"
+	@echo "... target.o"
+	@echo "... target.i"
+	@echo "... target.s"
 .PHONY : help
 
 

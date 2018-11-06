@@ -19,6 +19,8 @@
 
 #include <mutex>
 #include <utility>
+#include <qmat/QMatAll>
+
 
 using namespace std;
 
@@ -28,15 +30,15 @@ public:
     Target();
     ~Target();
     
-    bool isEmpty();
     void insert(float x, float y);
-    void extract();
+    QVec extract();
+    void setPendiente (bool pend);
+    bool getPendiente();
     
 private:
-    
-   pair<float, float> coordenadas;
+   QVec coordenadasRobot;
    mutex hiloBloq;
-   bool heLlegado;
+   bool pendiente = false;
 };
 
 #endif // TARGET_H

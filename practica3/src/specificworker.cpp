@@ -23,7 +23,7 @@
 */
 SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 {
-    
+
 }
 
 /**
@@ -49,81 +49,54 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 
 
 
-	timer.start(Period);
+    timer.start(Period);
 
 
-	return true;
+    return true;
 }
 
 /**
 * @brief ...
-* 
+*
 */
 void SpecificWorker::compute()
 {
-    const float threshold = 200; // millimeters
-    static int cont = 0;
-    static int giro = 0;
-    
     try
     {
-    	// read laser data 
-        RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();
-        
-        //para dividir el vector en particiones
-        int l = ldata.size()/10;
- 
-        //ordenamos las posiciones del vector que están dentro del rango por distancia
-        std::sort(ldata.begin() + l * 4, ldata.begin() + l * 6 , [](RoboCompLaser::TData a, RoboCompLaser::TData b){ return a.dist < b.dist; });
-        
-        //velocidadAvance = 1000 (velocidadMaxima) * y (distMin/5000-mm que mide la habitacion-)
-        float velocidadAdv = 4000 * (ldata[l*4].dist / 5000);
-        if (velocidadAdv > 1000) //para asegurarnos que el robot va a 1000 como velocidad maxima
-            velocidadAdv = 1000;
-        
-        float velocidadGiro = 10 / (ldata[l*4].dist / 5000);
-         if (velocidadGiro > 2) //para asegurarnos que el robot va a 2 como velocidad maxima
-            velocidadGiro = 2;
-         
-       //ordenamos ahora el vector entero de menor a mayor distancia usando una funcion lambda
-        std::sort(ldata.begin(), ldata.end(), [](RoboCompLaser::TData a, RoboCompLaser::TData b){ return a.dist < b.dist; });  
-        
-	if(ldata.front().dist < threshold)
-	{
-         if(ldata.front().angle < 0 && giro == 0){
-            differentialrobot_proxy->setSpeedBase(0, velocidadGiro); //girar derecha (objeto izquierda)
-         }
-          else{
-          differentialrobot_proxy->setSpeedBase(0, -velocidadGiro); //girar izquierda (objeto derecha)
-          giro = 1;
-          }
-        cont = 0;
-    
-    usleep(rand()%(1500000-100000 + 1) + 100000);  // random wait between 1.5s and 0.1sec
-	}
-	else
-	{
-        if(cont == 25){
-            cont = 0;
-        
-         int num = 0;
-         float r = rand() % 3; //aleatorio entre 0 y 2
-         
-         while(num != 30){ //para que se gire mas de una vez
-         if(ldata.front().angle < 0)
-           differentialrobot_proxy->setSpeedBase(0, r);
-        else
-           differentialrobot_proxy->setSpeedBase(0, -r); 
-        num++;
-         }
-        } else{
+
+        //Obtener estado de la base
+        RoboCompGenericBase::TBaseState bState;
+        differentialrobot_proxy->getBaseState(bState);
+
+        //Si no 
+        if (coord.getPendiente()) {
+
+            Rot2D baseAngle (bState.alpha); //Matriz en dos dimensiones que son las coordenadas,
+            // obtengo las coordenadas del robot con respecto al mundo real
+
+            QVec T = QVec::vec2(bState.x, bState.z);
+            QVec Y = coord.extract();
+            QVec posicR = baseAngle.invert() * (Y - T);
+
+            float rot = atan2(posicR[0], posicR[1]);
+            float f = exp(-rot*rot);
+            float dist = posicR.norm2();
+            float g = (1./1000.) * dist;
+            if (dist > 1000)
+                g = 1;
             
-        cont ++;
-        differentialrobot_proxy->setSpeedBase(velocidadAdv, 0); //moverse recto
-        giro = 0;
+            //Calculamos la velocidad
+            float veloc = 600 * f * g;
+            
+            differentialrobot_proxy->setSpeedBase(veloc, rot);
+
+            //Si la distancia es menor que 50 suponemos que se ha llegado al objetivo.
+            if (dist < 50) {
+                coord.setPendiente(false);
+                differentialrobot_proxy->setSpeedBase(0, 0);
+            }
         }
-         }
-  	}
+    }
     catch(const Ice::Exception &ex)
     {
         std::cout << ex << std::endl;
@@ -132,6 +105,7 @@ void SpecificWorker::compute()
 
 void SpecificWorker::setPick(const Pick &myPick)
 {
-    
-
+    coord.insert(myPick.x, myPick.z);
 }
+
+

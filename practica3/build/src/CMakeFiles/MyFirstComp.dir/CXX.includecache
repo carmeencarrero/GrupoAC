@@ -42,14 +42,6 @@ config.h
 genericworker.h
 ../src/./genericworker.h
 
-../src/./target.h
-mutex
--
-vector
--
-pair
--
-
 /home/carmen/robocomp/components/GrupoAC/practica3/build/src/CommonBehavior.cpp
 CommonBehavior.h
 -
@@ -312,6 +304,18 @@ genericworker.h
 innermodel/innermodel.h
 -
 target.h
+/home/carmen/robocomp/components/GrupoAC/practica3/src/target.h
+
+/home/carmen/robocomp/components/GrupoAC/practica3/src/target.cpp
+target.h
+/home/carmen/robocomp/components/GrupoAC/practica3/src/target.h
+
+/home/carmen/robocomp/components/GrupoAC/practica3/src/target.h
+mutex
+-
+utility
+-
+qmat/QMatAll
 -
 
 /opt/robocomp/classes/qlog/qlog.cpp

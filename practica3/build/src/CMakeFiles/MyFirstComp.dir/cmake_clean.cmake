@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "ui_mainUI.h"
   "CMakeFiles/MyFirstComp.dir/specificworker.cpp.o"
   "CMakeFiles/MyFirstComp.dir/specificmonitor.cpp.o"
+  "CMakeFiles/MyFirstComp.dir/target.cpp.o"
   "CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o"
   "CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o"
   "CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o"

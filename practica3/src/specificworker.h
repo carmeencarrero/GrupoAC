@@ -29,7 +29,7 @@
 
 #include <genericworker.h>
 #include <innermodel/innermodel.h>
-#include <target.h>
+#include "target.h"
 
 class SpecificWorker : public GenericWorker
 {
@@ -46,7 +46,7 @@ public slots:
 
 private:
 	InnerModel *innerModel;
-
+    Target coord;
 };
 
 #endif
