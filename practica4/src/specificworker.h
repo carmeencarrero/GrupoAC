@@ -40,13 +40,20 @@ public:
 	bool setParams(RoboCompCommonBehavior::ParameterList params);
 
 	void setPick(const Pick &myPick);
-
+    void bug();
+    bool obstacle();
+    bool targetAtSight();
+    void gotoTarget();
+    
 public slots:
 	void compute();
 
 private:
-	InnerModel *innerModel;
+	std::shared_ptr<InnerModel> innerModel;
     Target coord;
+    enum State {BUG, IDLE, GOTO};
+    enum State state = IDLE;
+
 };
 
 #endif

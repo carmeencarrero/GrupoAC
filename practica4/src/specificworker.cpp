@@ -36,18 +36,16 @@ SpecificWorker::~SpecificWorker()
 
 bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 {
-//       THE FOLLOWING IS JUST AN EXAMPLE
-//
-//	try
-//	{
-//		RoboCompCommonBehavior::Parameter par = params.at("InnerModelPath");
-//		innermodel_path = par.value;
-//		innermodel = new InnerModel(innermodel_path);
-//	}
-//	catch(std::exception e) { qFatal("Error reading config params"); }
 
+    try
+    {
+        RoboCompCommonBehavior::Parameter par = params.at("InnerModelPath");
+        innerModel = std::make_shared<InnerModel>(par.value);
+    }
 
-
+    catch(std::exception e) {
+        qFatal("Error reading config params");
+    }
 
     timer.start(Period);
 
@@ -61,51 +59,102 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 */
 void SpecificWorker::compute()
 {
-    try
-    {
+    try {
+        
+    //Obtener estado de la base
+    RoboCompGenericBase::TBaseState bState;
+    differentialrobot_proxy->getBaseState(bState);
+    RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();
+    
+    innermodel->updateTranslationPointers("base", bState.x, 0, bState.y, 0, bState.alpha, 0);
 
-        //Obtener estado de la base
-        RoboCompGenericBase::TBaseState bState;
-        differentialrobot_proxy->getBaseState(bState);
+        switch(state) {
 
-        //Si tiene coordenadas pendientes
-        if (coord.getPendiente()) {
+        case State::IDLE:
 
-            Rot2D baseAngle (bState.alpha); //Matriz en dos dimensiones que son las coordenadas,
-            // obtengo las coordenadas del robot con respecto al mundo real
+            if (target.isActive())
 
-            QVec T = QVec::vec2(bState.x, bState.z);
-            QVec Y = coord.extract();
-            QVec posicR = baseAngle.invert() * (Y - T);
+                state = State::GOTO;
+            break;
 
-            float rot = atan2(posicR[0], posicR[1]);
-            float f = exp(-rot*rot);
-            float dist = posicR.norm2();
-            float g = (1./1000.) * dist;
-            if (dist > 1000)
-                g = 1;
-            
-            //Calculamos la velocidad
-            float veloc = 600 * f * g;
-            
-            differentialrobot_proxy->setSpeedBase(veloc, rot);
+        case State::GOTO:
 
-            //Si la distancia es menor que 50 suponemos que se ha llegado al objetivo.
-            if (dist < 50) {
-                coord.setPendiente(false);
-                differentialrobot_proxy->setSpeedBase(0, 0);
-            }
+            gotoTarget();
+            break;
+
+        case State::BUG:
+
+            bug();
+            break;
+
         }
+
     }
-    catch(const Ice::Exception &ex)
-    {
+    catch(const Ice::Exception &ex) {
         std::cout << ex << std::endl;
     }
 }
 
+//Metodo que inserta las coordenadas del mundo
 void SpecificWorker::setPick(const Pick &myPick)
 {
     coord.insert(myPick.x, myPick.z);
 }
 
+
+void SpecificWorker::gotoTarget()
+{
+
+    if(obstacle == true)   // If ther is an obstacle ahead, then transit to BUG
+    {
+        state = State::BUG;
+        return;
+    }
+
+    //Obtener estado de la base
+    RoboCompGenericBase::TBaseState bState;
+    differentialrobot_proxy->getBaseState(bState);
+
+    //Si tiene coordenadas pendientes
+    if (coord.getPendiente()) {
+
+        Rot2D baseAngle (bState.alpha); //Matriz en dos dimensiones que son las coordenadas,
+        // obtengo las coordenadas del robot con respecto al mundo real
+
+        QVec T = QVec::vec2(bState.x, bState.z);
+        QVec Y = coord.extract();
+        QVec posicR = baseAngle.invert() * (Y - T);
+
+        float rot = atan2(posicR[0], posicR[1]);
+        float f = exp(-rot*rot);
+        float dist = posicR.norm2();
+        float g = (1./1000.) * dist;
+        if (dist > 1000)
+            g = 1;
+
+        //Calculamos la velocidad
+        float veloc = 600 * f * g;
+
+        differentialrobot_proxy->setSpeedBase(veloc, rot);
+
+        //Si la distancia es menor que 50 suponemos que se ha llegado al objetivo.
+        if (dist < 50) {
+            coord.setPendiente(false);
+            differentialrobot_proxy->setSpeedBase(0, 0);
+        }
+
+    }
+
+
+    void SpecificWorker::bug() {
+
+    }
+
+    bool SpecificWorker::obstacle() {
+
+    }
+
+    bool SpecificWorker::targetAtSight() {
+
+    }
 
