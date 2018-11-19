@@ -44,15 +44,20 @@ public:
     bool obstacle();
     bool targetAtSight();
     void gotoTarget();
+    void rotar();
+    bool cortaRecta();
+    void calcularRecta();
     
 public slots:
 	void compute();
 
 private:
+    //puntero inteligente
 	std::shared_ptr<InnerModel> innerModel;
     Target coord;
-    enum State {BUG, IDLE, GOTO};
+    enum State {BUG, IDLE, GOTO, ROTATE};
     enum State state = IDLE;
+    float A, B, C;
 
 };
 

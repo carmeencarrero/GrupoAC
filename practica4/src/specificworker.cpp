@@ -53,6 +53,12 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
     return true;
 }
 
+//Metodo que inserta las coordenadas del mundo
+void SpecificWorker::setPick(const Pick &myPick)
+{
+    coord.insert(myPick.x, myPick.z);
+}
+
 /**
 * @brief ...
 *
@@ -60,31 +66,34 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 void SpecificWorker::compute()
 {
     try {
-        
-    //Obtener estado de la base
-    RoboCompGenericBase::TBaseState bState;
-    differentialrobot_proxy->getBaseState(bState);
-    RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();
     
-    innermodel->updateTranslationPointers("base", bState.x, 0, bState.y, 0, bState.alpha, 0);
-
+        if (coord.getPendiente())
+        calcularRecta();
+        
+        //Preguntar para que vale (da error)
+        innerModel->setUpdateTranslationPointers("robot", bState.x, 0, bState.z, 0, bState.alpha, 0);
+    
         switch(state) {
 
         case State::IDLE:
-
-            if (target.isActive())
-
+            
+            if (coord.getPendiente())
                 state = State::GOTO;
             break;
 
         case State::GOTO:
-
+            
             gotoTarget();
             break;
 
         case State::BUG:
 
             bug();
+            break;
+
+        case State::ROTATE:
+
+            rotar();
             break;
 
         }
@@ -95,19 +104,59 @@ void SpecificWorker::compute()
     }
 }
 
-//Metodo que inserta las coordenadas del mundo
-void SpecificWorker::setPick(const Pick &myPick)
+//Calcula A, B y C
+void SpecificWorker::calcularRecta()
 {
-    coord.insert(myPick.x, myPick.z);
+
+    QVec final = coord.extract();
+    
+    //Obtener estado de la base
+    RoboCompGenericBase::TBaseState bState;
+    differentialrobot_proxy->getBaseState(bState);
+    
+    QVec inicio;
+    inicio.resize(2);
+    
+    inicio[0] = bState.x;
+    inicio[1] = bState.z;
+    
+    QVec vectorDirector = final - inicio;
+    
+    A = vectorDirector[1];
+    B = - vectorDirector[0];
+    C = (vectorDirector[0] * bState.z) - (vectorDirector[1] * bState.x);
+}
+
+//Metodo que comprueba si corta la recta o no
+bool SpecificWorker::cortaRecta(){    
+    
+    //Obtener estado de la base
+    RoboCompGenericBase::TBaseState bState;
+    differentialrobot_proxy->getBaseState(bState);
+    
+    QVec inicio;
+    inicio.resize(2);
+    
+    inicio[0] = bState.x;
+    inicio[1] = bState.z;
+    
+    float recta = (A * bState.x) + (B * bState.z) + C;
+    
+        if (fabs(recta) <= 0.5)
+            return true;
+        else
+            return false;
+    
 }
 
 
+//NOTE COMPLETAR
 void SpecificWorker::gotoTarget()
 {
 
-    if(obstacle == true)   // If ther is an obstacle ahead, then transit to BUG
+    if(obstacle())   // If ther is an obstacle ahead, then transit to ROTATE
     {
-        state = State::BUG;
+        state = State::ROTATE;
         return;
     }
 
@@ -115,46 +164,95 @@ void SpecificWorker::gotoTarget()
     RoboCompGenericBase::TBaseState bState;
     differentialrobot_proxy->getBaseState(bState);
 
-    //Si tiene coordenadas pendientes
-    if (coord.getPendiente()) {
 
-        Rot2D baseAngle (bState.alpha); //Matriz en dos dimensiones que son las coordenadas,
-        // obtengo las coordenadas del robot con respecto al mundo real
+    Rot2D baseAngle (bState.alpha); //Matriz en dos dimensiones que son las coordenadas,
+    // obtengo las coordenadas del robot con respecto al mundo real
 
-        QVec T = QVec::vec2(bState.x, bState.z);
-        QVec Y = coord.extract();
-        QVec posicR = baseAngle.invert() * (Y - T);
+    QVec T = QVec::vec2(bState.x, bState.z);
+    QVec Y = coord.extract();
+    QVec posicR = baseAngle.invert() * (Y - T);
 
-        float rot = atan2(posicR[0], posicR[1]);
-        float f = exp(-rot*rot);
-        float dist = posicR.norm2();
-        float g = (1./1000.) * dist;
-        if (dist > 1000)
-            g = 1;
+    float angulo = atan2(posicR[0], posicR[1]);
+    float dist = posicR.norm2();
 
-        //Calculamos la velocidad
-        float veloc = 600 * f * g;
-
-        differentialrobot_proxy->setSpeedBase(veloc, rot);
-
-        //Si la distancia es menor que 50 suponemos que se ha llegado al objetivo.
-        if (dist < 50) {
-            coord.setPendiente(false);
-            differentialrobot_proxy->setSpeedBase(0, 0);
-        }
-
+    //Si la distancia es menor que 50 suponemos que se ha llegado al objetivo y cambiamos el estado
+    if (dist < 50) {
+        state = State::IDLE;
+        coord.setPendiente(false);
+        return;
     }
 
+    float adv = dist;
+    if (fabs(angulo) > 0.05)
+        adv = 0;
+}
 
-    void SpecificWorker::bug() {
+//Gira sobre sí mismo hasta que deja de ver el obstaculo
+void SpecificWorker::rotar() {
 
+     RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();
+     
+     //para dividir el vector en particiones
+    int l = ldata.size()/10;
+    
+    //ordenamos las posiciones del vector que están dentro del rango por distancia (ordenamos la parte derecha)
+    std::sort(ldata.begin() + l * 5, ldata.begin() + l * 6 , [](RoboCompLaser::TData a, RoboCompLaser::TData b) {
+        return a.dist < b.dist;
+    });
+    
+    if (ldata.begin()->dist < 50){
+        differentialrobot_proxy->setSpeedBase(0, -0.6); //giramos a izquierda
+    }
+    else if (ldata.begin()->dist >= 50){
+        state = State::BUG; //deja de ver el obstaculo
+    }
+}
+
+//Bordea el objeto
+//NOTE --COMPLETAR--
+void SpecificWorker::bug() {
+
+    if (targetAtSight()) {
+        state = State::GOTO;
     }
 
-    bool SpecificWorker::obstacle() {
-
+    if (cortaRecta()){
+        state = State::GOTO;
     }
+    //si ha llegado, cambia a IDLE
+}
 
-    bool SpecificWorker::targetAtSight() {
+//Hay obstaculo
+bool SpecificWorker::obstacle() {
 
+    RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();
+    //para dividir el vector en particiones
+    int l = ldata.size()/10;
+    auto inicio = ldata.begin() + l * 4;
+
+    //ordenamos las posiciones del vector que están dentro del rango por distancia
+    std::sort(inicio, ldata.begin() + l * 6 , [](RoboCompLaser::TData a, RoboCompLaser::TData b) {
+        return a.dist < b.dist;
+    });
+
+    if(inicio->dist < 100)
+        return true;
+    else
+        return false;
+}
+
+//Ve el objetivo
+bool SpecificWorker::targetAtSight() {
+    
+    TLaserData lasercopy = laser_proxy->getLaserData();
+    QPolygonF polygon;
+    
+    for (auto l:lasercopy){
+        QVec lr = innerModel->laserTo("world", "laser", l.dist, l.angle);
+                  polygon << QPointF(lr.x(), lr.z());
     }
+    
+    QVec t = coord.extract();
+    return  polygon.containsPoint( QPointF(t[0], t[1] ), Qt::WindingFill);
+}
 
