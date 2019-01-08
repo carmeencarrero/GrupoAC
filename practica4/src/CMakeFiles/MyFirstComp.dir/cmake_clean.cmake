@@ -22,6 +22,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyFirstComp.dir/commonbehaviorI.cpp.o"
   "CMakeFiles/MyFirstComp.dir/genericworker.cpp.o"
   "CMakeFiles/MyFirstComp.dir/rcismousepickerI.cpp.o"
+  "CMakeFiles/MyFirstComp.dir/Target.cpp.o"
   "CMakeFiles/MyFirstComp.dir/CommonBehavior.cpp.o"
   "CMakeFiles/MyFirstComp.dir/DifferentialRobot.cpp.o"
   "CMakeFiles/MyFirstComp.dir/GenericBase.cpp.o"

@@ -1,4 +1,4 @@
-# Install script for directory: /home/carmen/robocomp/components/GrupoAC/practica2
+# Install script for directory: /home/carmen/robocomp/components/GrupoAC/practica4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -46,12 +46,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/opt/robocomp/etc-default" TYPE FILE RENAME "MyFirstComp.conf" FILES "/home/carmen/robocomp/components/GrupoAC/practica2/etc/config")
+file(INSTALL DESTINATION "/opt/robocomp/etc-default" TYPE FILE RENAME "MyFirstComp.conf" FILES "/home/carmen/robocomp/components/GrupoAC/practica4/etc/config")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/carmen/robocomp/components/GrupoAC/practica2/src/cmake_install.cmake")
+  include("/home/carmen/robocomp/components/GrupoAC/practica4/src/cmake_install.cmake")
 
 endif()
 
@@ -63,5 +63,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/carmen/robocomp/components/GrupoAC/practica2/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/carmen/robocomp/components/GrupoAC/practica4/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

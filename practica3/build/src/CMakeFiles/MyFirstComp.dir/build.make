@@ -57,37 +57,37 @@ include src/CMakeFiles/MyFirstComp.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/MyFirstComp.dir/flags.make
 
-src/CommonBehavior.cpp: /opt/robocomp/interfaces/CommonBehavior.ice
+src/CommonBehavior.cpp: /home/carmen/robocomp/interfaces/CommonBehavior.ice
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating CommonBehavior.cpp and CommonBehavior.h from CommonBehavior.ice"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && slice2cpp -I/opt/robocomp///interfaces/ -I/opt/robocomp//interfaces -I/opt/robocomp/interfaces -I. /opt/robocomp//interfaces/CommonBehavior.ice --output-dir .
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && slice2cpp -I/home/carmen/robocomp//interfaces/ -I/home/carmen/robocomp/interfaces -I/opt/robocomp/interfaces -I. /home/carmen/robocomp/interfaces/CommonBehavior.ice --output-dir .
 
 src/CommonBehavior.h: src/CommonBehavior.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/CommonBehavior.h
 
-src/DifferentialRobot.cpp: /opt/robocomp/interfaces/DifferentialRobot.ice
+src/DifferentialRobot.cpp: /home/carmen/robocomp/interfaces/DifferentialRobot.ice
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating DifferentialRobot.cpp and DifferentialRobot.h from DifferentialRobot.ice"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && slice2cpp -I/opt/robocomp///interfaces/ -I/opt/robocomp//interfaces -I/opt/robocomp/interfaces -I. /opt/robocomp//interfaces/DifferentialRobot.ice --output-dir .
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && slice2cpp -I/home/carmen/robocomp//interfaces/ -I/home/carmen/robocomp/interfaces -I/opt/robocomp/interfaces -I. /home/carmen/robocomp/interfaces/DifferentialRobot.ice --output-dir .
 
 src/DifferentialRobot.h: src/DifferentialRobot.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/DifferentialRobot.h
 
-src/GenericBase.cpp: /opt/robocomp/interfaces/GenericBase.ice
+src/GenericBase.cpp: /home/carmen/robocomp/interfaces/GenericBase.ice
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating GenericBase.cpp and GenericBase.h from GenericBase.ice"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && slice2cpp -I/opt/robocomp///interfaces/ -I/opt/robocomp//interfaces -I/opt/robocomp/interfaces -I. /opt/robocomp//interfaces/GenericBase.ice --output-dir .
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && slice2cpp -I/home/carmen/robocomp//interfaces/ -I/home/carmen/robocomp/interfaces -I/opt/robocomp/interfaces -I. /home/carmen/robocomp/interfaces/GenericBase.ice --output-dir .
 
 src/GenericBase.h: src/GenericBase.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/GenericBase.h
 
-src/Laser.cpp: /opt/robocomp/interfaces/Laser.ice
+src/Laser.cpp: /home/carmen/robocomp/interfaces/Laser.ice
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Laser.cpp and Laser.h from Laser.ice"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && slice2cpp -I/opt/robocomp///interfaces/ -I/opt/robocomp//interfaces -I/opt/robocomp/interfaces -I. /opt/robocomp//interfaces/Laser.ice --output-dir .
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && slice2cpp -I/home/carmen/robocomp//interfaces/ -I/home/carmen/robocomp/interfaces -I/opt/robocomp/interfaces -I. /home/carmen/robocomp/interfaces/Laser.ice --output-dir .
 
 src/Laser.h: src/Laser.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/Laser.h
 
-src/RCISMousePicker.cpp: /opt/robocomp/interfaces/RCISMousePicker.ice
+src/RCISMousePicker.cpp: /home/carmen/robocomp/interfaces/RCISMousePicker.ice
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating RCISMousePicker.cpp and RCISMousePicker.h from RCISMousePicker.ice"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && slice2cpp -I/opt/robocomp///interfaces/ -I/opt/robocomp//interfaces -I/opt/robocomp/interfaces -I. /opt/robocomp//interfaces/RCISMousePicker.ice --output-dir .
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && slice2cpp -I/home/carmen/robocomp//interfaces/ -I/home/carmen/robocomp/interfaces -I/opt/robocomp/interfaces -I. /home/carmen/robocomp/interfaces/RCISMousePicker.ice --output-dir .
 
 src/RCISMousePicker.h: src/RCISMousePicker.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/RCISMousePicker.h
@@ -168,76 +168,76 @@ src/CMakeFiles/MyFirstComp.dir/target.cpp.o.provides: src/CMakeFiles/MyFirstComp
 src/CMakeFiles/MyFirstComp.dir/target.cpp.o.provides.build: src/CMakeFiles/MyFirstComp.dir/target.cpp.o
 
 
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/MyFirstComp.dir/flags.make
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o: /opt/robocomp/classes/rapplication/rapplication.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o -c /opt/robocomp/classes/rapplication/rapplication.cpp
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/MyFirstComp.dir/flags.make
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o: /home/carmen/robocomp/classes/rapplication/rapplication.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o"
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o -c /home/carmen/robocomp/classes/rapplication/rapplication.cpp
 
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.i"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.i
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.i"
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carmen/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.i
 
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.s"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.s
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.s"
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carmen/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.s
 
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.requires:
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o.requires:
 
-.PHONY : src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.requires
+.PHONY : src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o.requires
 
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.provides: src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.provides.build
-.PHONY : src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.provides
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o.provides: src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o.provides.build
+.PHONY : src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o.provides
 
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.provides.build: src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o
-
-
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o: src/CMakeFiles/MyFirstComp.dir/flags.make
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o: /opt/robocomp/classes/sigwatch/sigwatch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o -c /opt/robocomp/classes/sigwatch/sigwatch.cpp
-
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.i"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/robocomp/classes/sigwatch/sigwatch.cpp > CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.i
-
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.s"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/robocomp/classes/sigwatch/sigwatch.cpp -o CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.s
-
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o.requires:
-
-.PHONY : src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o.requires
-
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o.provides: src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o.provides.build
-.PHONY : src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o.provides
-
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o.provides.build: src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o.provides.build: src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o
 
 
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/MyFirstComp.dir/flags.make
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o: /opt/robocomp/classes/qlog/qlog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o -c /opt/robocomp/classes/qlog/qlog.cpp
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o: src/CMakeFiles/MyFirstComp.dir/flags.make
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o: /home/carmen/robocomp/classes/sigwatch/sigwatch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o"
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o -c /home/carmen/robocomp/classes/sigwatch/sigwatch.cpp
 
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.i"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/robocomp/classes/qlog/qlog.cpp > CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.i
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.i"
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carmen/robocomp/classes/sigwatch/sigwatch.cpp > CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.i
 
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.s"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/robocomp/classes/qlog/qlog.cpp -o CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.s
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.s"
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carmen/robocomp/classes/sigwatch/sigwatch.cpp -o CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.s
 
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o.requires:
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o.requires:
 
-.PHONY : src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o.requires
+.PHONY : src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o.requires
 
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o.provides: src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o.provides.build
-.PHONY : src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o.provides
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o.provides: src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o.provides.build
+.PHONY : src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o.provides
 
-src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o.provides.build: src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o.provides.build: src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o
+
+
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/MyFirstComp.dir/flags.make
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o: /home/carmen/robocomp/classes/qlog/qlog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o"
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o -c /home/carmen/robocomp/classes/qlog/qlog.cpp
+
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.i"
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carmen/robocomp/classes/qlog/qlog.cpp > CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.i
+
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.s"
+	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carmen/robocomp/classes/qlog/qlog.cpp -o CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.s
+
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o.requires
+
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o.provides: src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/MyFirstComp.dir/build.make src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o.provides.build
+.PHONY : src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o.provides
+
+src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o.provides.build: src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o
 
 
 src/CMakeFiles/MyFirstComp.dir/main.cpp.o: src/CMakeFiles/MyFirstComp.dir/flags.make
@@ -509,9 +509,9 @@ MyFirstComp_OBJECTS = \
 "CMakeFiles/MyFirstComp.dir/specificworker.cpp.o" \
 "CMakeFiles/MyFirstComp.dir/specificmonitor.cpp.o" \
 "CMakeFiles/MyFirstComp.dir/target.cpp.o" \
-"CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o" \
-"CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o" \
-"CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o" \
+"CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o" \
+"CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o" \
+"CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o" \
 "CMakeFiles/MyFirstComp.dir/main.cpp.o" \
 "CMakeFiles/MyFirstComp.dir/genericmonitor.cpp.o" \
 "CMakeFiles/MyFirstComp.dir/commonbehaviorI.cpp.o" \
@@ -530,9 +530,9 @@ MyFirstComp_EXTERNAL_OBJECTS =
 ../bin/MyFirstComp: src/CMakeFiles/MyFirstComp.dir/specificworker.cpp.o
 ../bin/MyFirstComp: src/CMakeFiles/MyFirstComp.dir/specificmonitor.cpp.o
 ../bin/MyFirstComp: src/CMakeFiles/MyFirstComp.dir/target.cpp.o
-../bin/MyFirstComp: src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o
-../bin/MyFirstComp: src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o
-../bin/MyFirstComp: src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o
+../bin/MyFirstComp: src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o
+../bin/MyFirstComp: src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o
+../bin/MyFirstComp: src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o
 ../bin/MyFirstComp: src/CMakeFiles/MyFirstComp.dir/main.cpp.o
 ../bin/MyFirstComp: src/CMakeFiles/MyFirstComp.dir/genericmonitor.cpp.o
 ../bin/MyFirstComp: src/CMakeFiles/MyFirstComp.dir/commonbehaviorI.cpp.o
@@ -563,9 +563,9 @@ src/CMakeFiles/MyFirstComp.dir/build: ../bin/MyFirstComp
 src/CMakeFiles/MyFirstComp.dir/requires: src/CMakeFiles/MyFirstComp.dir/specificworker.cpp.o.requires
 src/CMakeFiles/MyFirstComp.dir/requires: src/CMakeFiles/MyFirstComp.dir/specificmonitor.cpp.o.requires
 src/CMakeFiles/MyFirstComp.dir/requires: src/CMakeFiles/MyFirstComp.dir/target.cpp.o.requires
-src/CMakeFiles/MyFirstComp.dir/requires: src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.requires
-src/CMakeFiles/MyFirstComp.dir/requires: src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o.requires
-src/CMakeFiles/MyFirstComp.dir/requires: src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o.requires
+src/CMakeFiles/MyFirstComp.dir/requires: src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o.requires
+src/CMakeFiles/MyFirstComp.dir/requires: src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o.requires
+src/CMakeFiles/MyFirstComp.dir/requires: src/CMakeFiles/MyFirstComp.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o.requires
 src/CMakeFiles/MyFirstComp.dir/requires: src/CMakeFiles/MyFirstComp.dir/main.cpp.o.requires
 src/CMakeFiles/MyFirstComp.dir/requires: src/CMakeFiles/MyFirstComp.dir/genericmonitor.cpp.o.requires
 src/CMakeFiles/MyFirstComp.dir/requires: src/CMakeFiles/MyFirstComp.dir/commonbehaviorI.cpp.o.requires

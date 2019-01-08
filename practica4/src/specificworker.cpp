@@ -44,11 +44,11 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
     }
 
     catch(std::exception e) {
+        std::cout << e.what() << std::endl;
         qFatal("Error reading config params");
     }
 
     timer.start(Period);
-
 
     return true;
 }
@@ -57,6 +57,7 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 void SpecificWorker::setPick(const Pick &myPick)
 {
     coord.insert(myPick.x, myPick.z);
+    calcularRecta();
 }
 
 /**
@@ -65,14 +66,16 @@ void SpecificWorker::setPick(const Pick &myPick)
 */
 void SpecificWorker::compute()
 {
+  
     try {
     
-        if (coord.getPendiente())
-        calcularRecta();
+         //Obtener estado de la base
+        differentialrobot_proxy->getBaseState(bState);
         
-        //Preguntar para que vale (da error)
-        innerModel->setUpdateTranslationPointers("robot", bState.x, 0, bState.z, 0, bState.alpha, 0);
-    
+        innerModel->updateTransformValues("base", bState.x, 0, bState.z, 0, bState.alpha, 0);
+        
+        ldata = laser_proxy->getLaserData();
+        
         switch(state) {
 
         case State::IDLE:
@@ -93,8 +96,8 @@ void SpecificWorker::compute()
 
         case State::ROTATE:
 
-            rotar();
-            break;
+           rotar();
+           break;
 
         }
 
@@ -109,10 +112,6 @@ void SpecificWorker::calcularRecta()
 {
 
     QVec final = coord.extract();
-    
-    //Obtener estado de la base
-    RoboCompGenericBase::TBaseState bState;
-    differentialrobot_proxy->getBaseState(bState);
     
     QVec inicio;
     inicio.resize(2);
@@ -150,20 +149,16 @@ bool SpecificWorker::cortaRecta(){
 }
 
 
-//NOTE COMPLETAR
+//Sigue el camino
 void SpecificWorker::gotoTarget()
 {
 
     if(obstacle())   // If ther is an obstacle ahead, then transit to ROTATE
-    {
+      {
         state = State::ROTATE;
-        return;
+     differentialrobot_proxy->setSpeedBase(0, 0);
+          return;
     }
-
-    //Obtener estado de la base
-    RoboCompGenericBase::TBaseState bState;
-    differentialrobot_proxy->getBaseState(bState);
-
 
     Rot2D baseAngle (bState.alpha); //Matriz en dos dimensiones que son las coordenadas,
     // obtengo las coordenadas del robot con respecto al mundo real
@@ -175,57 +170,89 @@ void SpecificWorker::gotoTarget()
     float angulo = atan2(posicR[0], posicR[1]);
     float dist = posicR.norm2();
 
-    //Si la distancia es menor que 50 suponemos que se ha llegado al objetivo y cambiamos el estado
-    if (dist < 50) {
+    differentialrobot_proxy->setSpeedBase(600, angulo);
+   
+    //Si la distancia es menor que 250 suponemos que se ha llegado al objetivo y cambiamos el estado
+    if (dist < 250) {
         state = State::IDLE;
+        differentialrobot_proxy->setSpeedBase(0, 0);
         coord.setPendiente(false);
         return;
     }
-
-    float adv = dist;
-    if (fabs(angulo) > 0.05)
-        adv = 0;
 }
 
 //Gira sobre sí mismo hasta que deja de ver el obstaculo
 void SpecificWorker::rotar() {
 
-     RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();
-     
-     //para dividir el vector en particiones
+    //para dividir el vector en particiones
     int l = ldata.size()/10;
-    
+
     //ordenamos las posiciones del vector que están dentro del rango por distancia (ordenamos la parte derecha)
-    std::sort(ldata.begin() + l * 5, ldata.begin() + l * 6 , [](RoboCompLaser::TData a, RoboCompLaser::TData b) {
+    std::sort(ldata.begin() + l * 2, ldata.begin() + l * 5, [](RoboCompLaser::TData a, RoboCompLaser::TData b) {
         return a.dist < b.dist;
     });
-    
-    if (ldata.begin()->dist < 50){
-        differentialrobot_proxy->setSpeedBase(0, -0.6); //giramos a izquierda
+   
+    if (ldata[l*5].dist < 450){
+        differentialrobot_proxy->setSpeedBase(0, -1); //giramos a izquierda
     }
-    else if (ldata.begin()->dist >= 50){
-        state = State::BUG; //deja de ver el obstaculo
+    else if (ldata[l*2].dist >= 450){
+         state = State::BUG; //deja de ver el obstaculo
+         differentialrobot_proxy->setSpeedBase(0, 0);
+         return;
     }
 }
 
 //Bordea el objeto
-//NOTE --COMPLETAR--
 void SpecificWorker::bug() {
 
     if (targetAtSight()) {
         state = State::GOTO;
+        return;
     }
 
     if (cortaRecta()){
         state = State::GOTO;
+        return;
     }
-    //si ha llegado, cambia a IDLE
+    
+    //ordenamos las posiciones del vector que están dentro del rango por distancia (ordenamos la parte derecha)
+    std::sort(ldata.begin(), ldata.begin() + 10, [](RoboCompLaser::TData a, RoboCompLaser::TData b) 
+    {
+        return a.dist < b.dist;
+    });
+    
+   float dist = ldata.begin()->dist;
+   
+   if (dist < 300){
+       differentialrobot_proxy->setSpeedBase(0, -0.2);
+   }
+   if (dist >= 300 && dist <= 350){
+     differentialrobot_proxy->setSpeedBase(600, 0);
+    }
+    if (dist > 350){
+     differentialrobot_proxy->setSpeedBase(0, 0.2);   
+    }
+    
+        Rot2D baseAngle (bState.alpha); //Matriz en dos dimensiones que son las coordenadas,
+    // obtengo las coordenadas del robot con respecto al mundo real
+
+    QVec T = QVec::vec2(bState.x, bState.z);
+    QVec Y = coord.extract();
+    QVec posicR = baseAngle.invert() * (Y - T);
+
+    float distObj = posicR.norm2();
+
+   if (distObj < 50) {
+        state = State::IDLE;
+        coord.setPendiente(false);
+        differentialrobot_proxy->setSpeedBase(0, 0);
+        return;
+    }
 }
 
 //Hay obstaculo
 bool SpecificWorker::obstacle() {
 
-    RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();
     //para dividir el vector en particiones
     int l = ldata.size()/10;
     auto inicio = ldata.begin() + l * 4;
@@ -235,7 +262,7 @@ bool SpecificWorker::obstacle() {
         return a.dist < b.dist;
     });
 
-    if(inicio->dist < 100)
+    if(inicio->dist <= 250)
         return true;
     else
         return false;
@@ -255,4 +282,3 @@ bool SpecificWorker::targetAtSight() {
     QVec t = coord.extract();
     return  polygon.containsPoint( QPointF(t[0], t[1] ), Qt::WindingFill);
 }
-

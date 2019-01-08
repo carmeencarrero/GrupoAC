@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/carmen/robocomp/components/GrupoAC/practica3
+CMAKE_SOURCE_DIR = /home/carmen/robocomp/components/GrupoAC/practica4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/carmen/robocomp/components/GrupoAC/practica3/build
+CMAKE_BINARY_DIR = /home/carmen/robocomp/components/GrupoAC/practica4/build
 
 # Utility rule file for MyFirstComp_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/carmen/robocomp/components/GrupoAC/practica3/build
 include src/CMakeFiles/MyFirstComp_autogen.dir/progress.make
 
 src/CMakeFiles/MyFirstComp_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target MyFirstComp"
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && /usr/bin/cmake -E cmake_autogen /home/carmen/robocomp/components/GrupoAC/practica3/build/src/CMakeFiles/MyFirstComp_autogen.dir ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target MyFirstComp"
+	cd /home/carmen/robocomp/components/GrupoAC/practica4/build/src && /usr/bin/cmake -E cmake_autogen /home/carmen/robocomp/components/GrupoAC/practica4/build/src/CMakeFiles/MyFirstComp_autogen.dir ""
 
 MyFirstComp_autogen: src/CMakeFiles/MyFirstComp_autogen
 MyFirstComp_autogen: src/CMakeFiles/MyFirstComp_autogen.dir/build.make
@@ -68,10 +68,10 @@ src/CMakeFiles/MyFirstComp_autogen.dir/build: MyFirstComp_autogen
 .PHONY : src/CMakeFiles/MyFirstComp_autogen.dir/build
 
 src/CMakeFiles/MyFirstComp_autogen.dir/clean:
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build/src && $(CMAKE_COMMAND) -P CMakeFiles/MyFirstComp_autogen.dir/cmake_clean.cmake
+	cd /home/carmen/robocomp/components/GrupoAC/practica4/build/src && $(CMAKE_COMMAND) -P CMakeFiles/MyFirstComp_autogen.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/MyFirstComp_autogen.dir/clean
 
 src/CMakeFiles/MyFirstComp_autogen.dir/depend:
-	cd /home/carmen/robocomp/components/GrupoAC/practica3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/carmen/robocomp/components/GrupoAC/practica3 /home/carmen/robocomp/components/GrupoAC/practica3/src /home/carmen/robocomp/components/GrupoAC/practica3/build /home/carmen/robocomp/components/GrupoAC/practica3/build/src /home/carmen/robocomp/components/GrupoAC/practica3/build/src/CMakeFiles/MyFirstComp_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/carmen/robocomp/components/GrupoAC/practica4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/carmen/robocomp/components/GrupoAC/practica4 /home/carmen/robocomp/components/GrupoAC/practica4/src /home/carmen/robocomp/components/GrupoAC/practica4/build /home/carmen/robocomp/components/GrupoAC/practica4/build/src /home/carmen/robocomp/components/GrupoAC/practica4/build/src/CMakeFiles/MyFirstComp_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/MyFirstComp_autogen.dir/depend
 

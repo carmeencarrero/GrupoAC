@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "/opt/robocomp/classes/sigwatch/sigwatch.h"
+#include "../../../../../../../classes/sigwatch/sigwatch.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'sigwatch.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 63

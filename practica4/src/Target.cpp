@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include "target.h"
+#include "Target.h"
 
 /**
  * \brief Default constructor

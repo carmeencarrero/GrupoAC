@@ -3,7 +3,6 @@
 SET ( SOURCES
   specificworker.cpp
   specificmonitor.cpp
-  target.cpp
 )
 
 # Headers set

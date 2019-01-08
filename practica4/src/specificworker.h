@@ -29,7 +29,7 @@
 
 #include <genericworker.h>
 #include <innermodel/innermodel.h>
-#include "target.h"
+#include "Target.h"
 
 class SpecificWorker : public GenericWorker
 {
@@ -58,6 +58,8 @@ private:
     enum State {BUG, IDLE, GOTO, ROTATE};
     enum State state = IDLE;
     float A, B, C;
+    TBaseState bState;
+    TLaserData ldata;
 
 };
 

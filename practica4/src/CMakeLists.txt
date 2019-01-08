@@ -27,6 +27,7 @@ SET ( SOURCES
   genericworker.cpp
   specificworker.cpp
   rcismousepickerI.cpp
+  Target.cpp
 )
 
 

@@ -67,8 +67,8 @@ public:
 	QMutex *mutex;
 
 
-	LaserPrx laser_proxy;
 	DifferentialRobotPrx differentialrobot_proxy;
+	LaserPrx laser_proxy;
 
 	virtual void setPick(const Pick &myPick) = 0;
 
