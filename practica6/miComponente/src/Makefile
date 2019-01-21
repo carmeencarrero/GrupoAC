@@ -186,6 +186,33 @@ chocachoca_autogen/fast:
 	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca_autogen.dir/build.make src/CMakeFiles/chocachoca_autogen.dir/build
 .PHONY : chocachoca_autogen/fast
 
+AprilTags.o: AprilTags.cpp.o
+
+.PHONY : AprilTags.o
+
+# target to build an object file
+AprilTags.cpp.o:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/AprilTags.cpp.o
+.PHONY : AprilTags.cpp.o
+
+AprilTags.i: AprilTags.cpp.i
+
+.PHONY : AprilTags.i
+
+# target to preprocess a source file
+AprilTags.cpp.i:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/AprilTags.cpp.i
+.PHONY : AprilTags.cpp.i
+
+AprilTags.s: AprilTags.cpp.s
+
+.PHONY : AprilTags.s
+
+# target to generate assembly for a file
+AprilTags.cpp.s:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/AprilTags.cpp.s
+.PHONY : AprilTags.cpp.s
+
 CommonBehavior.o: CommonBehavior.cpp.o
 
 .PHONY : CommonBehavior.o
@@ -267,6 +294,60 @@ GenericBase.cpp.s:
 	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/GenericBase.cpp.s
 .PHONY : GenericBase.cpp.s
 
+GotoPoint.o: GotoPoint.cpp.o
+
+.PHONY : GotoPoint.o
+
+# target to build an object file
+GotoPoint.cpp.o:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/GotoPoint.cpp.o
+.PHONY : GotoPoint.cpp.o
+
+GotoPoint.i: GotoPoint.cpp.i
+
+.PHONY : GotoPoint.i
+
+# target to preprocess a source file
+GotoPoint.cpp.i:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/GotoPoint.cpp.i
+.PHONY : GotoPoint.cpp.i
+
+GotoPoint.s: GotoPoint.cpp.s
+
+.PHONY : GotoPoint.s
+
+# target to generate assembly for a file
+GotoPoint.cpp.s:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/GotoPoint.cpp.s
+.PHONY : GotoPoint.cpp.s
+
+JointMotor.o: JointMotor.cpp.o
+
+.PHONY : JointMotor.o
+
+# target to build an object file
+JointMotor.cpp.o:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/JointMotor.cpp.o
+.PHONY : JointMotor.cpp.o
+
+JointMotor.i: JointMotor.cpp.i
+
+.PHONY : JointMotor.i
+
+# target to preprocess a source file
+JointMotor.cpp.i:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/JointMotor.cpp.i
+.PHONY : JointMotor.cpp.i
+
+JointMotor.s: JointMotor.cpp.s
+
+.PHONY : JointMotor.s
+
+# target to generate assembly for a file
+JointMotor.cpp.s:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/JointMotor.cpp.s
+.PHONY : JointMotor.cpp.s
+
 Laser.o: Laser.cpp.o
 
 .PHONY : Laser.o
@@ -320,6 +401,33 @@ RCISMousePicker.s: RCISMousePicker.cpp.s
 RCISMousePicker.cpp.s:
 	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/RCISMousePicker.cpp.s
 .PHONY : RCISMousePicker.cpp.s
+
+apriltagsI.o: apriltagsI.cpp.o
+
+.PHONY : apriltagsI.o
+
+# target to build an object file
+apriltagsI.cpp.o:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/apriltagsI.cpp.o
+.PHONY : apriltagsI.cpp.o
+
+apriltagsI.i: apriltagsI.cpp.i
+
+.PHONY : apriltagsI.i
+
+# target to preprocess a source file
+apriltagsI.cpp.i:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/apriltagsI.cpp.i
+.PHONY : apriltagsI.cpp.i
+
+apriltagsI.s: apriltagsI.cpp.s
+
+.PHONY : apriltagsI.s
+
+# target to generate assembly for a file
+apriltagsI.cpp.s:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/apriltagsI.cpp.s
+.PHONY : apriltagsI.cpp.s
 
 chocachoca_autogen/mocs_compilation.o: chocachoca_autogen/mocs_compilation.cpp.o
 
@@ -428,6 +536,33 @@ genericworker.s: genericworker.cpp.s
 genericworker.cpp.s:
 	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/genericworker.cpp.s
 .PHONY : genericworker.cpp.s
+
+gotopointI.o: gotopointI.cpp.o
+
+.PHONY : gotopointI.o
+
+# target to build an object file
+gotopointI.cpp.o:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/gotopointI.cpp.o
+.PHONY : gotopointI.cpp.o
+
+gotopointI.i: gotopointI.cpp.i
+
+.PHONY : gotopointI.i
+
+# target to preprocess a source file
+gotopointI.cpp.i:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/gotopointI.cpp.i
+.PHONY : gotopointI.cpp.i
+
+gotopointI.s: gotopointI.cpp.s
+
+.PHONY : gotopointI.s
+
+# target to generate assembly for a file
+gotopointI.cpp.s:
+	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente && $(MAKE) -f src/CMakeFiles/chocachoca.dir/build.make src/CMakeFiles/chocachoca.dir/gotopointI.cpp.s
+.PHONY : gotopointI.cpp.s
 
 home/carmen/robocomp/classes/qlog/qlog.o: home/carmen/robocomp/classes/qlog/qlog.cpp.o
 
@@ -632,6 +767,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... install"
 	@echo "... chocachoca_autogen"
+	@echo "... AprilTags.o"
+	@echo "... AprilTags.i"
+	@echo "... AprilTags.s"
 	@echo "... CommonBehavior.o"
 	@echo "... CommonBehavior.i"
 	@echo "... CommonBehavior.s"
@@ -641,12 +779,21 @@ help:
 	@echo "... GenericBase.o"
 	@echo "... GenericBase.i"
 	@echo "... GenericBase.s"
+	@echo "... GotoPoint.o"
+	@echo "... GotoPoint.i"
+	@echo "... GotoPoint.s"
+	@echo "... JointMotor.o"
+	@echo "... JointMotor.i"
+	@echo "... JointMotor.s"
 	@echo "... Laser.o"
 	@echo "... Laser.i"
 	@echo "... Laser.s"
 	@echo "... RCISMousePicker.o"
 	@echo "... RCISMousePicker.i"
 	@echo "... RCISMousePicker.s"
+	@echo "... apriltagsI.o"
+	@echo "... apriltagsI.i"
+	@echo "... apriltagsI.s"
 	@echo "... chocachoca_autogen/mocs_compilation.o"
 	@echo "... chocachoca_autogen/mocs_compilation.i"
 	@echo "... chocachoca_autogen/mocs_compilation.s"
@@ -659,6 +806,9 @@ help:
 	@echo "... genericworker.o"
 	@echo "... genericworker.i"
 	@echo "... genericworker.s"
+	@echo "... gotopointI.o"
+	@echo "... gotopointI.i"
+	@echo "... gotopointI.s"
 	@echo "... home/carmen/robocomp/classes/qlog/qlog.o"
 	@echo "... home/carmen/robocomp/classes/qlog/qlog.i"
 	@echo "... home/carmen/robocomp/classes/qlog/qlog.s"

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/carmen/robocomp/components/GrupoAC/practica6/miComponen
 include src/CMakeFiles/chocachoca_autogen.dir/progress.make
 
 src/CMakeFiles/chocachoca_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target chocachoca"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target chocachoca"
 	cd /home/carmen/robocomp/components/GrupoAC/practica6/miComponente/src && /usr/bin/cmake -E cmake_autogen /home/carmen/robocomp/components/GrupoAC/practica6/miComponente/src/CMakeFiles/chocachoca_autogen.dir ""
 
 chocachoca_autogen: src/CMakeFiles/chocachoca_autogen

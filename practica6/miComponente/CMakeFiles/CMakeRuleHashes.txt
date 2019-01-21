@@ -1,8 +1,11 @@
 # Hashes of file build rules.
+0d4d448db9adb5562e0a5b5bd5f3831c src/AprilTags.cpp
 c989bc070508ad105f14dc5716d41595 src/CMakeFiles/chocachoca_autogen
-b61f11c1c0536f7622a514cba4ae5cd5 src/CommonBehavior.cpp
-b3a005e69a485d26774a1ae72278a49c src/DifferentialRobot.cpp
-53022151afa2ac40c0284daa72dea956 src/GenericBase.cpp
-ee14413fafb1d5d3a13c4647247fefb1 src/Laser.cpp
-dba797981dfa8c864ffcfdb30ee5bf7e src/RCISMousePicker.cpp
+e663c5a4cc12829d59347b385f6a741c src/CommonBehavior.cpp
+4f69171f63ca8bac8518afe17d04ad5d src/DifferentialRobot.cpp
+527144c5b80355fd4da2d3fd8ba9dfd1 src/GenericBase.cpp
+2e95aef3babdc838b77b2a840ec259c9 src/GotoPoint.cpp
+8776fe32fe566dd1c72312926e7a8ee0 src/JointMotor.cpp
+465c790cdd50d0fb685ddcd5b9bec2b3 src/Laser.cpp
+c53d37208e1712a38c853fb804861bca src/RCISMousePicker.cpp
 01b8a123bdb6edfb8e61d0023723f042 src/ui_mainUI.h

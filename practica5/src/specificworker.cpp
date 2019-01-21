@@ -111,7 +111,6 @@ void SpecificWorker::compute()
     	QVec posicR = innerModel->transform("base",currentPoint,"world");
 
    	 float angulo = atan2(posicR[0], posicR[2]);
-      qDebug() << "ANGULOOOOOOOOOOOOOOOOOOOOOO" << angulo;
    	 float dist = posicR.norm2();
      
       //para dividir el vector en particiones
