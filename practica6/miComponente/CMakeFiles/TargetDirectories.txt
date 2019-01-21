@@ -1,0 +1,14 @@
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/CMakeFiles/install/strip.dir
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/CMakeFiles/install.dir
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/CMakeFiles/install/local.dir
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/CMakeFiles/list_install_components.dir
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/CMakeFiles/edit_cache.dir
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/CMakeFiles/rebuild_cache.dir
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/src/CMakeFiles/install/strip.dir
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/src/CMakeFiles/edit_cache.dir
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/src/CMakeFiles/chocachoca.dir
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/src/CMakeFiles/list_install_components.dir
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/src/CMakeFiles/install/local.dir
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/src/CMakeFiles/rebuild_cache.dir
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/src/CMakeFiles/install.dir
+/home/carmen/robocomp/components/GrupoAC/practica6/miComponente/src/CMakeFiles/chocachoca_autogen.dir

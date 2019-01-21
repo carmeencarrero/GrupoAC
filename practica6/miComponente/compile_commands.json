@@ -1,0 +1,82 @@
+[
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/specificworker.cpp.o -c /home/carmen/robocomp/components/GrupoAC/practica5/src/specificworker.cpp",
+  "file": "/home/carmen/robocomp/components/GrupoAC/practica5/src/specificworker.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/specificmonitor.cpp.o -c /home/carmen/robocomp/components/GrupoAC/practica5/src/specificmonitor.cpp",
+  "file": "/home/carmen/robocomp/components/GrupoAC/practica5/src/specificmonitor.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/home/carmen/robocomp/classes/rapplication/rapplication.cpp.o -c /home/carmen/robocomp/classes/rapplication/rapplication.cpp",
+  "file": "/home/carmen/robocomp/classes/rapplication/rapplication.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp.o -c /home/carmen/robocomp/classes/sigwatch/sigwatch.cpp",
+  "file": "/home/carmen/robocomp/classes/sigwatch/sigwatch.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/home/carmen/robocomp/classes/qlog/qlog.cpp.o -c /home/carmen/robocomp/classes/qlog/qlog.cpp",
+  "file": "/home/carmen/robocomp/classes/qlog/qlog.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/main.cpp.o -c /home/carmen/robocomp/components/GrupoAC/practica5/src/main.cpp",
+  "file": "/home/carmen/robocomp/components/GrupoAC/practica5/src/main.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/genericmonitor.cpp.o -c /home/carmen/robocomp/components/GrupoAC/practica5/src/genericmonitor.cpp",
+  "file": "/home/carmen/robocomp/components/GrupoAC/practica5/src/genericmonitor.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/commonbehaviorI.cpp.o -c /home/carmen/robocomp/components/GrupoAC/practica5/src/commonbehaviorI.cpp",
+  "file": "/home/carmen/robocomp/components/GrupoAC/practica5/src/commonbehaviorI.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/genericworker.cpp.o -c /home/carmen/robocomp/components/GrupoAC/practica5/src/genericworker.cpp",
+  "file": "/home/carmen/robocomp/components/GrupoAC/practica5/src/genericworker.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/rcismousepickerI.cpp.o -c /home/carmen/robocomp/components/GrupoAC/practica5/src/rcismousepickerI.cpp",
+  "file": "/home/carmen/robocomp/components/GrupoAC/practica5/src/rcismousepickerI.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/CommonBehavior.cpp.o -c /home/carmen/robocomp/components/GrupoAC/practica5/src/CommonBehavior.cpp",
+  "file": "/home/carmen/robocomp/components/GrupoAC/practica5/src/CommonBehavior.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/Laser.cpp.o -c /home/carmen/robocomp/components/GrupoAC/practica5/src/Laser.cpp",
+  "file": "/home/carmen/robocomp/components/GrupoAC/practica5/src/Laser.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/GenericBase.cpp.o -c /home/carmen/robocomp/components/GrupoAC/practica5/src/GenericBase.cpp",
+  "file": "/home/carmen/robocomp/components/GrupoAC/practica5/src/GenericBase.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/DifferentialRobot.cpp.o -c /home/carmen/robocomp/components/GrupoAC/practica5/src/DifferentialRobot.cpp",
+  "file": "/home/carmen/robocomp/components/GrupoAC/practica5/src/DifferentialRobot.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/RCISMousePicker.cpp.o -c /home/carmen/robocomp/components/GrupoAC/practica5/src/RCISMousePicker.cpp",
+  "file": "/home/carmen/robocomp/components/GrupoAC/practica5/src/RCISMousePicker.cpp"
+},
+{
+  "directory": "/home/carmen/robocomp/components/GrupoAC/practica5/src",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_DLL -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_XML_LIB -I/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/include -isystem /usr/include/qt4 -isystem /usr/include/qt4/QtOpenGL -isystem /usr/include/qt4/QtGui -isystem /usr/include/qt4/QtXml -isystem /usr/include/qt4/QtCore -I/home/carmen/robocomp/components/GrupoAC/practica5/src -I/home/carmen/robocomp/components/GrupoAC/practica5/src/. -I/opt/robocomp/include -I/classes -I/home/carmen/robocomp/components/GrupoAC/practica5 -I/home/carmen/robocomp/classes -I/home/carmen/robocomp/libs -I/home/carmen/robocomp/interfaces -I/include  -g   -Wall -Wall -std=gnu++1z -o CMakeFiles/chocachoca.dir/chocachoca_autogen/mocs_compilation.cpp.o -c /home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/mocs_compilation.cpp",
+  "file": "/home/carmen/robocomp/components/GrupoAC/practica5/src/chocachoca_autogen/mocs_compilation.cpp"
+}
+]

@@ -30,9 +30,7 @@ SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 * \brief Default destructor
 */
 SpecificWorker::~SpecificWorker()
-{
-
-}
+{}
 
 bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 {
@@ -167,7 +165,7 @@ void SpecificWorker::gotoTarget()
     QVec Y = coord.extract();
     QVec posicR = baseAngle.invert() * (Y - T);
 
-    float angulo = atan2(posicR[0], posicR[1]);
+    float angulo = atan2(posicR[0], posicR[2]);
     float dist = posicR.norm2();
 
     differentialrobot_proxy->setSpeedBase(600, angulo);

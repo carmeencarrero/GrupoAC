@@ -1,0 +1,14 @@
+/home/carmen/robocomp/components/GrupoAC/practica5/CMakeFiles/install/strip.dir
+/home/carmen/robocomp/components/GrupoAC/practica5/CMakeFiles/install.dir
+/home/carmen/robocomp/components/GrupoAC/practica5/CMakeFiles/install/local.dir
+/home/carmen/robocomp/components/GrupoAC/practica5/CMakeFiles/list_install_components.dir
+/home/carmen/robocomp/components/GrupoAC/practica5/CMakeFiles/edit_cache.dir
+/home/carmen/robocomp/components/GrupoAC/practica5/CMakeFiles/rebuild_cache.dir
+/home/carmen/robocomp/components/GrupoAC/practica5/src/CMakeFiles/install/strip.dir
+/home/carmen/robocomp/components/GrupoAC/practica5/src/CMakeFiles/edit_cache.dir
+/home/carmen/robocomp/components/GrupoAC/practica5/src/CMakeFiles/chocachoca.dir
+/home/carmen/robocomp/components/GrupoAC/practica5/src/CMakeFiles/list_install_components.dir
+/home/carmen/robocomp/components/GrupoAC/practica5/src/CMakeFiles/install/local.dir
+/home/carmen/robocomp/components/GrupoAC/practica5/src/CMakeFiles/rebuild_cache.dir
+/home/carmen/robocomp/components/GrupoAC/practica5/src/CMakeFiles/install.dir
+/home/carmen/robocomp/components/GrupoAC/practica5/src/CMakeFiles/chocachoca_autogen.dir

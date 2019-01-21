@@ -1,0 +1,14 @@
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/CMakeFiles/install/strip.dir
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/CMakeFiles/install.dir
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/CMakeFiles/install/local.dir
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/CMakeFiles/list_install_components.dir
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/CMakeFiles/edit_cache.dir
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/CMakeFiles/rebuild_cache.dir
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/src/CMakeFiles/install/strip.dir
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/src/CMakeFiles/edit_cache.dir
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/src/CMakeFiles/AprilTagsComp.dir
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/src/CMakeFiles/rebuild_cache.dir
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/src/CMakeFiles/list_install_components.dir
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/src/CMakeFiles/install/local.dir
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/src/CMakeFiles/install.dir
+/home/carmen/robocomp/components/robocomp-robolab/components/apriltagsComp/src/CMakeFiles/AprilTagsComp_autogen.dir
